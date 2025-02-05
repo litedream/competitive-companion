@@ -3,14 +3,14 @@ import { TaskBuilder } from '../../models/TaskBuilder';
 import { htmlToElement } from '../../utils/dom';
 import { Parser } from '../Parser';
 
-export class LuoguProblemParser extends Parser {
+export class LeetcodeCNProblemParser extends Parser {
   public getMatchPatterns(): string[] {
-    return ['https://www.luogu.com.cn/problem/*'];
+    return ['https://leetcode.cn/problems/*'];
   }
 
   public async parse(url: string, html: string): Promise<Sendable> {
     const elem = htmlToElement(html);
-    const task = new TaskBuilder('Luogu').setUrl(url);
+    const task = new TaskBuilder('Leetcode').setUrl(url);
 
     if (elem.querySelector('.main-container') !== null) {
       this.parseFromPage(task, elem);
