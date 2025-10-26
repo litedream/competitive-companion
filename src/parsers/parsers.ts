@@ -32,6 +32,7 @@ import { LanqiaoContestParser } from './contest/LanqiaoContestParser';
 import { LibreOJContestParser } from './contest/LibreOJContestParser';
 import { LightOJContestParser } from './contest/LightOJContestParser';
 import { LuoguContestParser } from './contest/LuoguContestParser';
+import { MarisaOJContestParser } from './contest/MarisaOJContestParser';
 import { NBUTOnlineJudgeContestParser } from './contest/NBUTOnlineJudgeContestParser';
 import { NOJContestParser } from './contest/NOJContestParser';
 import { OpenJudgeContestParser } from './contest/OpenJudgeContestParser';
@@ -76,6 +77,7 @@ import { ContestHunterProblemParser } from './problem/ContestHunterProblemParser
 import { CPythonUZProblemParser } from './problem/CPythonUZProblemParser';
 import { CSAcademyProblemParser } from './problem/CSAcademyProblemParser';
 import { CSESProblemParser } from './problem/CSESProblemParser';
+import { CSGOJProblemParser } from './problem/CSGOJProblemParser';
 import { CSUACMOnlineJudgeProblemParser } from './problem/CSUACMOnlineJudgeProblemParser';
 import { DimikOJProblemParser } from './problem/DimikOJProblemParser';
 import { DMOJProblemParser } from './problem/DMOJProblemParser';
@@ -92,6 +94,7 @@ import { HDOJProblemParser } from './problem/HDOJProblemParser';
 import { HihoCoderProblemParser } from './problem/HihoCoderProblemParser';
 import { HITOnlineJudgeProblemParser } from './problem/HITOnlineJudgeProblemParser';
 import { HKOIOnlineJudgeProblemParser } from './problem/HKOIOnlineJudgeProblemParser';
+import { HOJProblemParser } from './problem/HOJProblemParser';
 import { HrbustOnlineJudgeProblemParser } from './problem/HrbustOnlineJudgeProblemParser';
 import { HydroProblemParser } from './problem/HydroProblemParser';
 import { InfoArenaProblemParser } from './problem/InfoArenaProblemParser';
@@ -117,6 +120,7 @@ import { NepsAcademyProblemParser } from './problem/NepsAcademyProblemParser';
 import { NewtonSchoolProblemParser } from './problem/NewtonSchoolProblemParser';
 import { NOJProblemParser } from './problem/NOJProblemParser';
 import { NowCoderProblemParser } from './problem/NowCoderProblemParser';
+import { OlympicodeProblemParser } from './problem/OlympicodeProblemParser';
 import { OmegaUpProblemParser } from './problem/OmegaUpProblemParser';
 import { OpenJudgeProblemParser } from './problem/OpenJudgeProblemParser';
 import { OTOGProblemParser } from './problem/OTOGProblemParser';
@@ -218,6 +222,8 @@ export const parsers: Parser[] = [
   new CSESProblemParser(),
   new CSESContestParser(),
 
+  new CSGOJProblemParser(),
+
   new CSUACMOnlineJudgeProblemParser(),
   new CSUACMOnlineJudgeContestParser(),
 
@@ -261,6 +267,8 @@ export const parsers: Parser[] = [
   new HKOIOnlineJudgeProblemParser(),
   new HKOIOnlineJudgeContestParser(),
 
+  new HOJProblemParser(),
+
   new HrbustOnlineJudgeProblemParser(),
 
   new HydroProblemParser(),
@@ -299,6 +307,7 @@ export const parsers: Parser[] = [
   new LuoguContestParser(),
 
   new MarisaOJProblemParser(),
+  new MarisaOJContestParser(),
 
   new MendoProblemParser(),
 
@@ -319,6 +328,8 @@ export const parsers: Parser[] = [
   new NOJContestParser(),
 
   new NowCoderProblemParser(),
+
+  new OlympicodeProblemParser(),
 
   new OmegaUpProblemParser(),
 

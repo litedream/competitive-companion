@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.62.0](https://github.com/jmerle/competitive-companion/releases/tag/2.62.0) (2025-08-10)
+- Added support for Olympicode (thanks [@EntityPlantt](https://github.com/EntityPlantt))
+- Added support for HOJ (thanks [@Introl-ljl](https://github.com/Introl-ljl))
+- Added support for Daimayuan Online Judge's bs.daimayuan.top interface
+- Added support for Yun Dou Xue Yuan
+- Fixed the SSOIER parser not working on https URLs
+- Fixed the TLX parser
+- Fixed the Codeforces parser omitting empty lines in sample cases
+- Fixed the KEP.uz parsers
+
+## [2.61.0](https://github.com/jmerle/competitive-companion/releases/tag/2.61.0) (2025-05-30)
+- Added a problem parser for CSGOJ (thanks [@xiaowhang](https://github.com/xiaowhang))
+- Added a contest parser for MarisaOJ (thanks [@dqhieuu](https://github.com/dqhieuu))
+- Fixed the PTA problem parser and enriched its output (thanks [@xiaowhang](https://github.com/xiaowhang))
+- Added support for non-integer time limits on Codeforces contest pages
+- Added support for the Aizu Online Judge UI at onlinejudge.u-aizu.ac.jp (previously only judge.u-aizu.ac.jp was supported)
+- Fixed the AtCoder, AlgoZenith, and Eolymp Basecamp problem parsers
+
 ## [2.60.0](https://github.com/jmerle/competitive-companion/releases/tag/2.60.0) (2025-02-12)
 - Added support for A.Y. Jackson Online Judge (thanks [@aicheye](https://github.com/aicheye))
 - Removed support for custom hosts introduced in 2.59.0 as it breaks CP Editor's Competitive Companion integration
